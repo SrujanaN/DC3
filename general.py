@@ -33,12 +33,13 @@ fig.add_trace(go.Sunburst(
 fig.update_layout(
     margin=dict(t=0, l=0, r=0, b=0)
 )
-
 fig.show()
 
+#treemap
 fig1 = go.Figure(go.Treemap(
     labels=list(parentList.keys()),
     parents=list(parentList.values()),
 ))
 
 fig1.show()
+
